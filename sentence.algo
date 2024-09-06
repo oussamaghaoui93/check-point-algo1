@@ -1,0 +1,34 @@
+ALGORITHM sentence
+VAR
+ str : STRING := ""  ;
+ i , sentences ,  vowels : INTEGER := 0 ;
+
+BEGIN
+ read(str);
+ WHILE ( str[i] != "" ) DO
+ i:= i +1 ;
+ SWITCH (str[i]) DO
+    CASE "a" :            
+    CASE "A" :      
+    CASE "e" :         
+    CASE "E" : 
+    CASE "i" :        
+    CASE "I" :               
+    CASE "o" :          
+    CASE "O" :        
+    CASE "u" :         
+    CASE "U" :                
+    CASE "y" :     
+    CASE "Y" : 
+    vowels := vowels +1 ;
+            BREAK;  
+    CASE " " : 
+    CASE "" : 
+    CASE "." :
+    sentences := sentences +1 ;
+            BREAK;         
+END_SWITCH
+ write("The length of the sentence"+i );
+ write("The number of words in the sentence" + sentences);
+ write("The number of vowels"+ vowels);
+END
